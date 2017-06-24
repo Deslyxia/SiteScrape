@@ -32,6 +32,7 @@ Config File Instructions
 
     Included in the project in the /conf folder is "scraper-config.xml.tpl". Prior to running this file will need
     to be edited. Specifically the url, username, pwd to connect to your mySql instance of choice will need to be provided.
+    Also once you edit it you will need to rename it scraper-config.xml so it gets picked up and pulled in. 
 
 
 Database Instructions
@@ -46,7 +47,7 @@ Database Instructions
         id int NOT NULL AUTO_INCREMENT,
         url varchar(255) NOT NULL,
         keyword varchar(255) NOT NULL,
-        count int NOT NULL,     
+        count int NOT NULL,
         updated TIMESTAMP NOT NULL,
         PRIMARY KEY (id)
         );
